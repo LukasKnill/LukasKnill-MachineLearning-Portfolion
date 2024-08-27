@@ -36,6 +36,15 @@ The `main` function orchestrates the entire process of soil image analysis and m
 
 5. **Result Compilation**: The results are compiled into CSV files for further analysis.
 
+### Fine-Tuning Process
+
+The fine-tuning of the segmentation model was a critical part of this project, aimed at enhancing its ability to accurately identify and segment soil clods. The process involved several key scripts:
+
+- **`binary_masks.py`**: Generates binary masks from annotated images to serve as ground truth for training.
+- **`Create_json.py`**: Creates a JSON annotation file that organizes the dataset.
+- **`Finetune_main.py`**: Handles the entire fine-tuning process.
+- **`LinearWarmupCosine.py`**: Implements a learning rate scheduler for training optimization.
+
 ### My Contributions
 
-I was responsible for developing the parts of the code that create 2D and 3D objects from depth maps, allowing for a detailed analysis of the soil structure. Additionally, I fine-tuned the segmentation model to improve its accuracy in identifying soil clods.
+I was responsible for developing the parts of the code that create 2D and 3D objects from depth maps, allowing for a detailed analysis of the soil structure. I was responsible for customizing the finetuning and conducting the full training process, ensuring the model was fine-tuned for optimal performance.
