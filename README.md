@@ -21,3 +21,21 @@ The primary objective of this project is to develop an AI-based system capable o
   - The initial model was trained on a diverse set of soil images to cover various conditions and clod characteristics. However, to enhance its performance, the model underwent several stages of fine-tuning.
   - This fine-tuning involved retraining the model with additional data, adjusting hyperparameters, and experimenting with different network architectures to reduce false positives and improve the segmentation accuracy.
   - The fine-tuning process also included validation against a separate test set of images to ensure that the model generalizes well to new, unseen data. The result is a robust model that provides reliable segmentation even under varying environmental conditions.
+
+### Explanation of the `main` Function
+
+The `main` function orchestrates the entire process of soil image analysis and metric generation. It includes the following key steps:
+
+1. **Data Loading**: Images, point clouds, and disparity maps are loaded from the specified data directory (`DATA_ROOT`).
+
+2. **Image Processing with SAM**: If enabled, the `SamAutomaticMaskGenerator` is used to segment soil clods in the images.
+
+3. **Depth Map Processing**: Disparity maps are processed to create depth maps, which are then used to analyze and create 2D and 3D representations of the soil clods.
+
+4. **Clod Analysis**: The segmented clods are analyzed to generate metrics like the mean weight diameter (MWD) and other relevant soil quality indicators.
+
+5. **Result Compilation**: The results are compiled into CSV files for further analysis.
+
+### My Contributions
+
+I was responsible for developing the parts of the code that create 2D and 3D objects from depth maps, allowing for a detailed analysis of the soil structure. Additionally, I fine-tuned the segmentation model to improve its accuracy in identifying soil clods.
