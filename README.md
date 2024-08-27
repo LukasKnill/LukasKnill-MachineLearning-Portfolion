@@ -20,12 +20,3 @@ The primary objective of this project is to analyze data from a fictional logist
 4. **Insights and Recommendations**:
    - The results from the clustering and decision tree analysis are interpreted to provide actionable insights. These insights can help the logistics company prioritize products based on their importance, optimize inventory management, and improve overall logistics efficiency.
 
-## Purpose
-This project serves as an experimental analysis to demonstrate the power of unsupervised learning in understanding product importance within a logistics company. The methods used here are versatile and can be applied to similar datasets to uncover valuable business insights without the need for extensive labeling or predefined categories.
-
-## Code Explanation
-The code in this project performs the following tasks:
-- **Data Preparation**: Loading and preprocessing the product data to ensure it's suitable for analysis.
-- **Clustering**: Applying K-Means clustering to segment products into distinct groups based on similarities in their attributes.
-- **Decision Tree Construction**: Building a decision tree to analyze and interpret the clusters, identifying key factors that determine product importance.
-- **Result Interpretation**: Analyzing the output to provide insights into which products are most critical to the logistics operations and why.
